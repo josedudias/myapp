@@ -48,7 +48,7 @@ class Layout extends StatelessWidget {
                 height: 150,
                 child: const Center(
                   child: Text(
-                    'Seu Nome Completo',
+                    'José Eduardo',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 30,
@@ -60,7 +60,7 @@ class Layout extends StatelessWidget {
             ),
           ],
         ),
-        // Segunda linha com a data da prova
+        // Segunda linha com a data (cor verde limão tonalidade 200)
         Row(
           children: [
             Expanded(
@@ -69,9 +69,9 @@ class Layout extends StatelessWidget {
                 height: 150,
                 child: Center(
                   child: Text(
-                    'Data da Prova',
+                    '19/09/2024',
                     style: TextStyle(
-                      color: Colors.orange[300],
+                      color: Colors.lime[200],  // Cor verde limão tonalidade 200
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                     ),
@@ -81,7 +81,7 @@ class Layout extends StatelessWidget {
             ),
           ],
         ),
-        // Quatro colunas com ícones
+        // Quatro colunas com ícones (todos na cor branca)
         Expanded(
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -92,8 +92,8 @@ class Layout extends StatelessWidget {
                   child: const Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Icon(Icons.star, size: 50),
-                      Icon(Icons.star_border, size: 50),
+                      Icon(Icons.star, size: 50, color: Colors.white),  // Ícone branco
+                      Icon(Icons.star_border, size: 50, color: Colors.white),  // Ícone branco
                     ],
                   ),
                 ),
@@ -102,7 +102,7 @@ class Layout extends StatelessWidget {
                 child: Container(
                   color: Colors.amber[400],
                   child: const Center(
-                    child: Icon(Icons.favorite, size: 50),
+                    child: Icon(Icons.favorite, size: 50, color: Colors.white),  // Ícone branco
                   ),
                 ),
               ),
@@ -110,7 +110,7 @@ class Layout extends StatelessWidget {
                 child: Container(
                   color: Colors.pink[400],
                   child: const Center(
-                    child: Icon(Icons.home, size: 50),
+                    child: Icon(Icons.home, size: 50, color: Colors.white),  // Ícone branco
                   ),
                 ),
               ),
@@ -118,7 +118,7 @@ class Layout extends StatelessWidget {
                 child: Container(
                   color: Colors.teal[400],
                   child: const Center(
-                    child: Icon(Icons.settings, size: 50),
+                    child: Icon(Icons.settings, size: 50, color: Colors.white),  // Ícone branco
                   ),
                 ),
               ),
@@ -138,7 +138,7 @@ class Layout extends StatelessWidget {
                     padding: EdgeInsets.only(right: 16.0),
                     child: Text(
                       'Nome da Turma',
-                      style: TextStyle( 
+                      style: TextStyle(
                         fontSize: 25,
                         fontStyle: FontStyle.italic,
                       ),
